@@ -18,10 +18,18 @@ body {
 <div class="homePageHeader">
      <div class="navbar" style="white-space:nowrap">
           <img src="logo-transparent.png" width="10%;"  alt="FinTech">
-          <a href="#">Contact</a>
-          <a href="#">Blog</a>
-          <a href="#">Events</a>
-          <a href="#">About</a>  
+          <a href="#">CONTACT</a>
+          <a href="#">BLOG</a>
+          <a href="#">EVENTS</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+                ABOUT
+            </button>
+            <div class="dropdown-content">
+              <a href="#">ABOUT US</a>
+              <a href="#">MEET THE TEAM</a>
+            </div>
+           </div>
       </div> 
 </div>
 <div class="text1">
