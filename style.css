@@ -76,8 +76,166 @@
     padding: 100px;
     margin-left: auto;
     margin-right: auto;
-    font-family: "Calibri";
+    font-family: "Gill Sans";
     text-align: center;
     font-size: 20px;
     width: 28%
+}
+
+.header1 {
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Libre Franklin";
+    text-align: Left;
+    font-size: 20px;
+    width: 70%
+}
+
+.text2{
+  padding: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Libre Franklin";
+  text-align: Left;
+  font-size: 20px;
+  width: 28%
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.center2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.t-image {
+  position: relative; /* Declared position allows for location changes */
+  top: -100px; /* Moves the image 100px closer to the top of the page */
+}
+
+.t-image2 {
+  position: relative; /* Declared position allows for location changes */
+  top: +60px; /* Moves the image 100px closer to the top of the page */
+}
+
+.t-image3 {
+  position: relative; /* Declared position allows for location changes */
+  top: +20px; /* Moves the image 100px closer to the top of the page */
+}
+
+.t-button { /* adjust events button */
+  position: relative; /* Declared position allows for location changes */
+  top: -140px; /* Moves the image 100px closer to the top of the page */
+  left: +120px;
+}
+
+.t-button2 { /* adjust meet the team button */
+  position: relative; /* Declared position allows for location changes */
+  top: +70px; /* Moves the image 100px closer to the top of the page */
+  left: +120px;
+}
+
+.t-button3 { /* adjust learn more button */
+  position: relative; /* Declared position allows for location changes */
+  left: +40px;
+}
+
+.t-button4 { /* adjust join our listserv button */
+  position: relative; /* Declared position allows for location changes */
+  left: 490px;
+  top: -80px;
+}
+
+.t-button5 { /* adjust join our listserv button */
+  position: relative; /* Declared position allows for location changes */
+  left: 80px;
+  top: +80px;
+}
+
+.button1 { /*first button */
+  background-color: white; 
+  border: 2px solid  black;
+  color: black;
+  padding: 14px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+.button1:hover {
+  background-color: black;
+  color: white;
+}
+
+.button2 { /*first button */
+  background-color: rgb(57, 173, 222); 
+  border: black;
+  color: white;
+  padding: 14px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  transition-duration: 0.4s;
+}
+
+.button2:hover {
+  background-color: rgb(96, 217, 250); /* Green */
+  color: white;
+}
+
+.button3 {
+  background-color: rgb(0, 0, 0); 
+  border: 2px solid white;
+  color: white;
+  padding: 14px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+.button3:hover {
+  background-color: white;
+  color: black;
+}
+
+.box{
+	width: 100%;
+  height: 200px;
+  background: black
+}
+
+.btn-space {
+  margin-right: 80px;
 }
