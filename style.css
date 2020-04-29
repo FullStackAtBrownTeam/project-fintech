@@ -1,119 +1,355 @@
 .homePageHeader {
-    background-color: grey;
-    background-image: url(website-banner.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-attachment: fixed;
-    height: 600px;
+  background-color: grey;
+  background-image: url(website-banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  height: 600px;
 }
 
- /* Style the top navigation bar */
- 
-.navbar {
-    padding: 0; /* Add some padding */
-    overflow: hidden; /* Hide overflow */
-    
-  }
-  
-  /* Style the navigation bar links */
-  .navbar a {
-    float: right;
-    display: block; /* Change the display to block, for responsive reasons (see below) */
-    color: white; /* White text color */
-    text-align: center; /* Center the text */
-    padding: 14px 20px; /* Add some padding */
-    text-decoration: none; /* Remove underline */
-  }
-.dropdown {
-    float: right;
-    overflow: hidden;
-  }
-  
+/* Style the top navigation bar */
 
-.dropdown .dropbtn {  
-    background-color: transparent;
-    display: block; /* Change the display to block, for responsive reasons (see below) */
-    color: white; /* White text color */
-    padding: 14px 20px; /* Add some padding */
-    border: none;
-    outline: none;
-    font-size: 16px;
-}
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #ddd;
-  }
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
+.homeNavbar {
+  padding: 0; /* Add some padding */
+  overflow: hidden; /* Hide overflow */
   
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+}
+
+/* Style the navigation bar links */
+.homeNavbar a {
+  float: right;
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+  font-family: "Libre Franklin"
+}
+
+.homeNavbar .dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+
+.homeNavbar .dropdown .dropbtn {  
+  background-color: transparent;
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  padding: 14px 20px; /* Add some padding */
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: "Libre Franklin"
+}
+.homeNavbar .dropbtn {
+  background-color: #ddd;
+}
+.homeNavbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.homeNavbar .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.homeNavbar .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.homeNavbar .dropdown:hover .dropdown-content {
+  display: block;
+}
 
 
 
 
 .text1{
-    padding: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "Gill Sans";
-    text-align: center;
-    font-size: 20px;
-    width: 28%
+  padding: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Libre Franklin";
+  text-align: center;
+  font-size: 20px;
+  width: 28%
 }
 
 .header1 {
-    padding: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "Libre Franklin";
-    text-align: Left;
-    font-size: 20px;
-    width: 70%
-}
-
-.text2{
-  padding: 100px;
+  padding: 30px;
   margin-left: auto;
   margin-right: auto;
   font-family: "Libre Franklin";
   text-align: Left;
   font-size: 20px;
-  width: 28%
+  width: 70%
+}
+
+.text2{
+padding: 100px;
+margin-left: auto;
+margin-right: auto;
+font-family: "Libre Franklin";
+text-align: Left;
+font-size: 20px;
+width: 28%
 }
 
 
 .column {
-  float: left;
-  width: 33.33%;
+float: left;
+width: 33.33%;
 }
 
 @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+.column {
+  width: 100%;
+}
 }
 
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+}
+
+.center2{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+
+.t-image {
+position: relative; /* Declared position allows for location changes */
+top: -100px; /* Moves the image 100px closer to the top of the page */
+}
+
+.t-image2 {
+position: relative; /* Declared position allows for location changes */
+top: +60px; /* Moves the image 100px closer to the top of the page */
+}
+
+.t-image3 {
+position: relative; /* Declared position allows for location changes */
+top: +20px; /* Moves the image 100px closer to the top of the page */
+}
+
+.t-button { /* adjust events button */
+position: relative; /* Declared position allows for location changes */
+top: -140px; /* Moves the image 100px closer to the top of the page */
+left: +120px;
+}
+
+.t-button2 { /* adjust meet the team button */
+position: relative; /* Declared position allows for location changes */
+top: +70px; /* Moves the image 100px closer to the top of the page */
+left: +120px;
+}
+
+.t-button3 { /* adjust learn more button */
+position: relative; /* Declared position allows for location changes */
+left: +40px;
+}
+
+.t-button4 { /* adjust join our listserv button */
+position: relative; /* Declared position allows for location changes */
+left: 490px;
+top: -80px;
+}
+
+.t-button5 { /* adjust join our listserv button */
+position: relative; /* Declared position allows for location changes */
+left: 80px;
+top: +80px;
+}
+
+.button1 { /*first button */
+background-color: white; 
+border: 2px solid  black;
+color: black;
+padding: 14px 40px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+transition-duration: 0.4s;
+}
+
+.button1:hover {
+background-color: black;
+color: white;
+}
+
+.button2 { /*first button */
+background-color: rgb(57, 173, 222); 
+border: black;
+color: white;
+padding: 14px 40px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 24px;
+transition-duration: 0.4s;
+}
+
+.button2:hover {
+background-color: rgb(96, 217, 250); /* Green */
+color: white;
+}
+
+.button3 {
+background-color: rgb(0, 0, 0); 
+border: 2px solid white;
+color: white;
+padding: 14px 40px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+transition-duration: 0.4s;
+}
+
+.button3:hover {
+background-color: white;
+color: black;
+}
+
+.box{
+width: 100%;
+height: 200px;
+background: black
+}
+
+.btn-space {
+margin-right: 80px;
+}
+
+
+
+.navbar {
+  padding-bottom: 0; /* Add some padding */
+  overflow: hidden; /* Hide overflow */
+  
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: right;
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: black; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+  font-family: "Libre Franklin"
+}
+
+.navbar .dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+
+.navbar .dropdown .dropbtn {  
+  background-color: transparent;
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: black; /* White text color */
+  padding: 14px 20px; /* Add some padding */
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: "Libre Franklin";
+
+}
+.navbar .dropbtn {
+  background-color: black;
+}
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.navbar .dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.navbar .dropdown-content a:hover {
+  background-color:black;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.meetText1 {
+  color: black;
+  font-family: "Fjalla One";
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+.meetText2 {
+  color: black;
+  font-family: "Fjalla One";
+  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-left: 50px;
+  font-size: 20px;
+}
+.column {
+  float: left;
+  padding-top: 10px;
+}
+
+.left1 {
+  padding-left: 15%;
+  width: 33%;
+  padding-right: 4%;
+}
+
+.right1 {
+  width: 33%;
+}
+
+.left2 {
+  padding-left: 10%;
+  width: 23.3333%;
+  padding-right: 5%;
+}
+.middle2 {
+  width: 23.3333%;
+  padding-right: 5%;
+}
+.right2 {
+  width: 23.3333%;
+}
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -121,121 +357,23 @@
   clear: both;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+hoverImage {
+  position: relative
 }
 
-.center2{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+hoverImage span {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  padding: 5%;
+  background: rgba(24, 23, 23, 0.8);
+  font-family: "Trebuchet MS";
+  font-size: 15px;
+  color: rgb(196, 189, 189);
+
 }
 
-.t-image {
-  position: relative; /* Declared position allows for location changes */
-  top: -100px; /* Moves the image 100px closer to the top of the page */
-}
-
-.t-image2 {
-  position: relative; /* Declared position allows for location changes */
-  top: +60px; /* Moves the image 100px closer to the top of the page */
-}
-
-.t-image3 {
-  position: relative; /* Declared position allows for location changes */
-  top: +20px; /* Moves the image 100px closer to the top of the page */
-}
-
-.t-button { /* adjust events button */
-  position: relative; /* Declared position allows for location changes */
-  top: -140px; /* Moves the image 100px closer to the top of the page */
-  left: +120px;
-}
-
-.t-button2 { /* adjust meet the team button */
-  position: relative; /* Declared position allows for location changes */
-  top: +70px; /* Moves the image 100px closer to the top of the page */
-  left: +120px;
-}
-
-.t-button3 { /* adjust learn more button */
-  position: relative; /* Declared position allows for location changes */
-  left: +40px;
-}
-
-.t-button4 { /* adjust join our listserv button */
-  position: relative; /* Declared position allows for location changes */
-  left: 490px;
-  top: -80px;
-}
-
-.t-button5 { /* adjust join our listserv button */
-  position: relative; /* Declared position allows for location changes */
-  left: 80px;
-  top: +80px;
-}
-
-.button1 { /*first button */
-  background-color: white; 
-  border: 2px solid  black;
-  color: black;
-  padding: 14px 40px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transition-duration: 0.4s;
-}
-
-.button1:hover {
-  background-color: black;
-  color: white;
-}
-
-.button2 { /*first button */
-  background-color: rgb(57, 173, 222); 
-  border: black;
-  color: white;
-  padding: 14px 40px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 24px;
-  transition-duration: 0.4s;
-}
-
-.button2:hover {
-  background-color: rgb(96, 217, 250); /* Green */
-  color: white;
-}
-
-.button3 {
-  background-color: rgb(0, 0, 0); 
-  border: 2px solid white;
-  color: white;
-  padding: 14px 40px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transition-duration: 0.4s;
-}
-
-.button3:hover {
-  background-color: white;
-  color: black;
-}
-
-.box{
-	width: 100%;
-  height: 200px;
-  background: black
-}
-
-.btn-space {
-  margin-right: 80px;
+hoverImage:hover span {
+  display: block
 }
