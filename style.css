@@ -377,3 +377,68 @@ hoverImage span {
 hoverImage:hover span {
   display: block
 }
+
+.column2 {
+  float: left;
+  width: 33%;
+  padding: 1.5px;
+}
+
+.img-blockchain {
+  float:  left;
+  width:  420px;
+  height: 420px;
+  background-image: url(blockchain.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+}
+
+.img-quantopian {
+  float:  left;
+  width:  420px;
+  height: 420px;
+  background-image: url(quantopian.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+}
+
+.img-WIBXFINTECH {
+  float:  left;
+  width:  420px;
+  height: 420px;
+  background-image: url(WIBXFINTECH.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+}
+
+.column2Text {
+  float: left;
+  width: 30%;
+  padding-right: 48px;
+}
+
+.eventsText {
+  color: black;
+  text-align: justify;
+  font-family: "Fjalla One";
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  font-size: 14px;
+}
+
+.bottomEventsText {
+  color: #B0C4DE;
+  font-family: "Fjalla One";
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-bottom: 30px;
+  font-size: 20px;
+}
+
