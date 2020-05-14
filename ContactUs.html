@@ -17,28 +17,36 @@ body {
 
 </head>
 <body>
-     <div class="navbar" style="white-space:nowrap">
-          <img src="logo-transparent.png" width="10%;"  alt="FinTech">
-          <a href="ContactUs.html">CONTACT</a>
-          <a href="#">BLOG</a>
-          <div class="navbar dropdown">
-            <button class="navbar dropbtn">
-                EVENTS
-            </button>
-            <div class="navbar dropdown-content">
-              <a href="Events.html">EVENTS</a>
+    <div class = "row">
+        <div class="column left3">
+            <a href="homePage.html">
+            <img src="logo-transparent.png" width="100%;"  alt="FinTech">
+            </a>
+         </div>
+         <div class="column right3">
+          <div class="navbar" style="white-space:nowrap">
+              <a href="ContactUs.html">CONTACT</a>
+              <a href="https://www.medium.com/fintech-brown">BLOG</a>
+                <div class="navbar dropdown">
+                   <button class="navbar dropbtn">
+                      EVENTS
+                   </button>
+                <div class="navbar dropdown-content">
+                  <a href="Events.html">EVENTS</a>
+                </div>
+               </div>
+              <div class="navbar dropdown">
+                <button class="navbar dropbtn">
+                    ABOUT
+                </button>
+                <div class="navbar dropdown-content">
+                  <a href="AboutUs.html">ABOUT US</a>
+                  <a href="MeetTheTeam.html">MEET THE TEAM</a>
+                </div>
+               </div>
             </div>
-           </div>
-          <div class="navbar dropdown">
-            <button class="navbar dropbtn">
-                ABOUT
-            </button>
-            <div class="navbar dropdown-content">
-              <a href="#">ABOUT US</a>
-              <a href="MeetTheTeam.html">MEET THE TEAM</a>
-            </div>
-           </div>
-      </div>
+        </div>
+    </div>
 <div class="meetText3" style="text-align: center">
     We want to hear from you! 
 </div>
@@ -71,11 +79,11 @@ body {
         <div class="row t-entry3">
             <label for="message" class="meetText4">Message</label>
             <br>
-                <textarea name="message" id="message" rows="6" cols="25" required></textarea>
+                <textarea name="message" id="message" resize = "none" required></textarea>
                 <br />
                 <input type="submit" value="Submit" class="button21 btn-space t-button6 meetText4">
-                    <input type="reset" value="Clear" class="button21 btn-space t-button7 meetText4">
-    
+ <!--             <input type="reset" value="Clear" class="button21 btn-space t-button7 meetText4">
+ -->
         </div>
     </form>
 </div>

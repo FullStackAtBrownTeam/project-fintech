@@ -1,3 +1,4 @@
+
 .homePageHeader {
   background-color: grey;
   background-image: url(website-banner.png);
@@ -41,11 +42,17 @@
   padding: 14px 20px; /* Add some padding */
   border: none;
   outline: none;
-  font-size: 16px;
+  font-size: 100%;
   font-family: "Libre Franklin"
 }
 .homeNavbar .dropbtn {
   background-color: #ddd;
+}
+.homeNavbar .dropbtn:hover {
+    background-color: rgb(28, 38, 44);
+}
+.homeNavbar  a:hover{
+  background-color: rgb(28, 38, 44);
 }
 .homeNavbar .dropdown-content {
   display: none;
@@ -71,9 +78,6 @@
 .homeNavbar .dropdown:hover .dropdown-content {
   display: block;
 }
-
-
-
 
 .text1{
   padding: 100px;
@@ -143,6 +147,7 @@ width: 50%;
   margin-left: auto;
   margin-right: auto;
   width: 30%;
+  min-width: 200px;
 }
 
 .t-image {
@@ -185,7 +190,7 @@ top: -80px;
 
 .t-button5 { /* adjust join our listserv button */
 position: relative; /* Declared position allows for location changes */
-left: 80px;
+padding-left: 8%;
 top: +80px;
 }
 
@@ -264,6 +269,7 @@ color: white;
 background-color: rgb(0, 0, 0); 
 border: 2px solid white;
 color: white;
+
 padding: 14px 40px;
 text-align: center;
 text-decoration: none;
@@ -279,8 +285,8 @@ color: black;
 
 .box{
 width: 100%;
-height: 200px;
-background: black
+height: 250px;
+background: black;
 }
 
 .btn-space {
@@ -290,9 +296,8 @@ margin-right: 80px;
 
 
 .navbar {
-  padding-bottom: 0; /* Add some padding */
+  padding-left: 0; /* Add some padding */
   overflow: hidden; /* Hide overflow */
-  
 }
 
 /* Style the navigation bar links */
@@ -315,7 +320,7 @@ margin-right: 80px;
 .navbar .dropdown .dropbtn {  
   background-color: transparent;
   display: block; /* Change the display to block, for responsive reasons (see below) */
-  color: black; /* White text color */
+  color: black; 
   padding: 14px 20px; /* Add some padding */
   border: none;
   outline: none;
@@ -325,6 +330,12 @@ margin-right: 80px;
 }
 .navbar .dropbtn {
   background-color: black;
+}
+.navbar .dropbtn:hover {
+  background-color: gray;
+}
+.navbar  a:hover{
+  background-color: gray;
 }
 .navbar .dropdown-content {
   display: none;
@@ -386,30 +397,57 @@ margin-right: 80px;
 
 .column {
   float: left;
-  padding-top: 10px;
 }
 
 .left1 {
   padding-left: 15%;
   width: 33%;
   padding-right: 4%;
+  padding-top: 10px;
 }
 
 .right1 {
   width: 33%;
+  padding-top: 10px;
 }
 
 .left2 {
   padding-left: 10%;
   width: 23.3333%;
   padding-right: 5%;
+  padding-top: 10px;
 }
 .middle2 {
   width: 23.3333%;
   padding-right: 5%;
+  padding-top: 10px;
 }
 .right2 {
   width: 23.3333%;
+  padding-top: 10px;
+}
+.left3 {
+  width: 10%;
+}
+
+.right3 {
+  width: 90%;
+  float: right;
+}
+.left4 {
+  padding-left: 5%;
+  width: 26.66666%;
+  padding-right: 7%;
+  padding-top: 10px;
+}
+.middle4 {
+  width: 26.66666%;
+  padding-right: 5%;
+  padding-top: 10px;
+}
+.right4 {
+  width:26.66666%;
+  padding-top: 10px;
 }
 /* Clear floats after the columns */
 .row:after {
@@ -422,23 +460,41 @@ hoverImage {
   position: relative
 }
 
-hoverImage span {
+hoverImage span1 {
+  overflow: auto;
   display: none;
   position: absolute;
   bottom: 0;
-  width: 90%;
-  padding: 5%;
+  width: 95%;
+  padding: 2.5%;
   background: rgba(24, 23, 23, 0.8);
   font-family: "Trebuchet MS";
-  font-size: 15px;
+  font-size:calc(8px + 0.5vw);
   color: rgb(196, 189, 189);
+  max-height: 500%;
+}
 
+hoverImage:hover span1 {
+  display: block
+}
+
+hoverImage span {
+  overflow: auto;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  padding: 2.5%;
+  background: rgba(24, 23, 23, 0.8);
+  font-family: "Trebuchet MS";
+  font-size:calc(8px + 0.5vw);
+  color: rgb(196, 189, 189);
+  max-height: 300%;
 }
 
 hoverImage:hover span {
   display: block
 }
-
 .column2 {
   float: left;
   width: 33%;
@@ -447,35 +503,35 @@ hoverImage:hover span {
 
 .img-blockchain {
   float:  left;
-  width:  420px;
-  height: 420px;
+  width:  100%;
+  height: auto;
   background-image: url(blockchain.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10px;
+  padding-top: 100%;
 }
 
 .img-quantopian {
   float:  left;
-  width:  420px;
-  height: 420px;
+  width:  100%;
+  height: auto;
   background-image: url(quantopian.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10px;
+  padding-top: 100%;
 }
 
 .img-WIBXFINTECH {
   float:  left;
-  width:  420px;
-  height: 420px;
+  width:  100%;
+  height: auto;
   background-image: url(WIBXFINTECH.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10px;
+  padding-top: 100%;
 }
 
 .column2Text {
@@ -490,7 +546,6 @@ hoverImage:hover span {
   font-family: "Fjalla One";
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 50px;
   font-size: 14px;
 }
 
@@ -498,7 +553,8 @@ hoverImage:hover span {
   color: #B0C4DE;
   font-family: "Fjalla One";
   padding-top: 30px;
-  padding-left: 50px;
+  padding-left: 8%;
+  padding-right: 8%;
   padding-bottom: 30px;
   font-size: 20px;
 }
@@ -509,4 +565,17 @@ hoverImage:hover span {
   padding: 20px;
   width: 30%;
   height: 350px;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
 }
+
+input {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  height: 100px;
+}
+
