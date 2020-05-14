@@ -138,6 +138,13 @@ margin-right: auto;
 width: 50%;
 }
 
+.center3{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
 .t-image {
 position: relative; /* Declared position allows for location changes */
 top: -100px; /* Moves the image 100px closer to the top of the page */
@@ -182,6 +189,30 @@ left: 80px;
 top: +80px;
 }
 
+.t-button6 { /* adjust join our listserv button */
+  position: relative; /* Declared position allows for location changes */
+  top: +20px;
+}
+
+.t-button7 { /* adjust join our listserv button */
+  position: relative; /* Declared position allows for location changes */
+  top: +20px;
+  left: -50px;
+}
+
+.t-entry1 { /* adjust text entry box */
+  position: relative; /* Declared position allows for location changes */
+  top: +15px;
+}
+.t-entry2 { /* adjust text entry box */
+  position: relative; /* Declared position allows for location changes */
+  top: +30px;
+}
+.t-entry3 { /* adjust text entry box */
+  position: relative; /* Declared position allows for location changes */
+  top: +40px;
+}
+
 .button1 { /*first button */
 background-color: white; 
 border: 2px solid  black;
@@ -215,6 +246,19 @@ transition-duration: 0.4s;
 background-color: rgb(96, 217, 250); /* Green */
 color: white;
 }
+
+.button21 { 
+  background-color: rgb(57, 173, 222); 
+  border: black;
+  color: white;
+  padding: 10px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  transition-duration: 0.4s;
+}
+  
 
 .button3 {
 background-color: rgb(0, 0, 0); 
@@ -323,6 +367,23 @@ margin-right: 80px;
   padding-left: 50px;
   font-size: 20px;
 }
+.meetText3 {
+  color: black;
+  font-family: "Fjalla One";
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  font-size: 45px;
+}
+
+.meetText4 {
+  color: black;
+  font-family: "Fjalla One";
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+
 .column {
   float: left;
   padding-top: 10px;
@@ -442,3 +503,10 @@ hoverImage:hover span {
   font-size: 20px;
 }
 
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 30%;
+  height: 350px;
+}
