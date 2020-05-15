@@ -534,6 +534,18 @@ hoverImage:hover span {
   padding-top: 100%;
 }
 
+.img-campus {
+  float:  left;
+  width: 100%;
+  height: auto;
+  background-image: url(campus.jpg);
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 100%;
+  padding-bottom: 100%;
+}
+
 .column2Text {
   float: left;
   width: 30%;
