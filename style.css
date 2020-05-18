@@ -110,13 +110,13 @@ width: 28%
 }
 
 
-.column {
+.column3 {
 float: left;
 width: 33.33%;
 }
 
 @media screen and (max-width: 600px) {
-.column {
+.column3 {
   width: 100%;
 }
 }
@@ -437,16 +437,16 @@ margin-right: 80px;
 .left4 {
   padding-left: 5%;
   width: 26.66666%;
-  padding-right: 7%;
   padding-top: 10px;
 }
 .middle4 {
   width: 26.66666%;
-  padding-right: 5%;
+  padding-left: 5%;
   padding-top: 10px;
 }
 .right4 {
   width:26.66666%;
+  padding-left: 5%;
   padding-top: 10px;
 }
 /* Clear floats after the columns */
@@ -532,18 +532,6 @@ hoverImage:hover span {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 100%;
-}
-
-.img-campus {
-  float:  left;
-  width: 100%;
-  height: auto;
-  background-image: url(campus.jpg);
-  background-position: 50% 0%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-top: 100%;
-  padding-bottom: 100%;
 }
 
 .column2Text {
