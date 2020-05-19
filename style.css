@@ -1,4 +1,13 @@
 
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 .homePageHeader {
   background-color: grey;
   background-image: url(website-banner.png);
@@ -80,7 +89,9 @@
 }
 
 .text1{
-  padding: 100px;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  float:center;
   margin-left: auto;
   margin-right: auto;
   font-family: "Libre Franklin";
@@ -90,13 +101,14 @@
 }
 
 .header1 {
-  padding: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
   margin-left: auto;
   margin-right: auto;
   font-family: "Libre Franklin";
   text-align: Left;
   font-size: 20px;
-  width: 70%
+  width: 80%
 }
 
 .text2{
@@ -108,25 +120,20 @@ text-align: Left;
 font-size: 20px;
 width: 28%
 }
-
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
 
 .column3 {
 float: left;
 width: 33.33%;
 }
 
-@media screen and (max-width: 600px) {
-.column3 {
-  width: 100%;
-}
-}
 
-/* Clear floats after the columns */
-.row:after {
-content: "";
-display: table;
-clear: both;
-}
+
+
 
 .center {
 display: block;
@@ -151,13 +158,12 @@ width: 50%;
 }
 
 .t-image {
-position: relative; /* Declared position allows for location changes */
-top: -100px; /* Moves the image 100px closer to the top of the page */
+width:100%;
+padding-bottom: 25px;
 }
 
 .t-image2 {
 position: relative; /* Declared position allows for location changes */
-top: +60px; /* Moves the image 100px closer to the top of the page */
 }
 
 .t-image3 {
@@ -167,25 +173,31 @@ top: +20px; /* Moves the image 100px closer to the top of the page */
 
 .t-button { /* adjust events button */
 position: relative; /* Declared position allows for location changes */
-top: -140px; /* Moves the image 100px closer to the top of the page */
-left: +120px;
+left: 50%;
+-ms-transform: translate(-50%, 0%);
+transform: translate(-50%, 0%);
+
 }
 
 .t-button2 { /* adjust meet the team button */
 position: relative; /* Declared position allows for location changes */
-top: +70px; /* Moves the image 100px closer to the top of the page */
-left: +120px;
+left: 50%;
+-ms-transform: translate(-50%, 0%);
+transform: translate(-50%, 0%);
 }
 
 .t-button3 { /* adjust learn more button */
 position: relative; /* Declared position allows for location changes */
-left: +40px;
+left: 50%;
+-ms-transform: translate(-50%, 0%);
+transform: translate(-50%, 0%);
 }
 
 .t-button4 { /* adjust join our listserv button */
 position: relative; /* Declared position allows for location changes */
-left: 490px;
-top: -80px;
+left: 50%;
+-ms-transform: translate(-50%, 0%);
+transform: translate(-50%, 0%);
 }
 
 .t-button5 { /* adjust join our listserv button */
@@ -291,6 +303,7 @@ background: black;
 
 .btn-space {
 margin-right: 80px;
+margin-bottom: 30px;
 }
 
 
@@ -449,12 +462,6 @@ margin-right: 80px;
   padding-left: 5%;
   padding-top: 10px;
 }
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 hoverImage {
   position: relative
@@ -472,6 +479,7 @@ hoverImage span1 {
   font-size:calc(8px + 0.5vw);
   color: rgb(196, 189, 189);
   max-height: 500%;
+  bottom: +5px;
 }
 
 hoverImage:hover span1 {
@@ -490,6 +498,7 @@ hoverImage span {
   font-size:calc(8px + 0.5vw);
   color: rgb(196, 189, 189);
   max-height: 300%;
+  bottom: +5px;
 }
 
 hoverImage:hover span {
@@ -579,3 +588,23 @@ textarea {
   height: 100px;
 }
 
+@media screen and (max-width: 600px) {
+  .column3 {
+    width: 100%;
+  }
+  .homeNavbar a{
+    font-size:calc(5px + 1vw);
+  }
+  .homeNavbar .dropdown .dropbtn{
+    font-size:calc(5px + 1vw);
+  }
+  .navbar a{
+    font-size:calc(5px + 1vw);
+  }
+  .navbar .dropdown .dropbtn{
+    font-size:calc(5px + 1vw);
+  }
+  .box{
+    height: 60vh;
+  }
+  }
