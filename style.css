@@ -470,6 +470,7 @@ margin-bottom: 30px;
   padding-top: 10px;
 }
 
+
 hoverImage {
   position: relative;
 }
@@ -644,6 +645,7 @@ textarea {
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 50px;
+    margin-bottom: 20px;
   }
   .middle4{
     width: 90%;
