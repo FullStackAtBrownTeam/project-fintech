@@ -52,23 +52,27 @@ body {
 </div>
 
 <div class="container center3" >
-    <form action="contact.php" method="POST">
+    <script type="text/javascript">var submitted=false;</script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='ContactUsThankyou.html';}">
+    </iframe>
+    <form class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdBxVm8B08vhP87xl33P5nOZJ5zppJGhyp5b_Z64plE_4-B8w/formResponse" 
+    target="hidden_iframe" onsubmit="submitted=true;">
         <div class="row">
             <label for="name" class="meetText4">Name</label>
                 <br>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="entry.2040652220" required>
                 </br> 
         </div>
         <div class="row t-entry1">
             <label for="email" class="meetText4">Email Address</label> 
                 <br>
-                    <input type="text" id= "email" name="email" required>
+                    <input type="email" id= "email" name="entry.1474605363" required>
                 </br> 
         </div>
         <div class="row t-entry2">
             <label for="reason" class="meetText4">Reason For Contact</label>
                 <br>
-                    <select id="reason" name="reasonforcontact" required>
+                    <select id="reason" name="entry.979419371" required>
                         <option value="Event Parnership">Event Partnership</option>
                         <option value="Joining the Club">Joining the Club</option>
                         <option value="Alumni">Alumni</option>
@@ -79,9 +83,9 @@ body {
         <div class="row t-entry3">
             <label for="message" class="meetText4">Message</label>
             <br>
-                <textarea name="message" id="message" resize = "none" required></textarea>
+                <textarea name="entry.1407195153" id="message" resize = "none" type="text" required></textarea>
                 <br />
-                <input type="submit" value="Submit" class="button21 btn-space t-button6 meetText4">
+                <input type="submit" value="Send" class="button21 btn-space t-button6 meetText4">
  <!--             <input type="reset" value="Clear" class="button21 btn-space t-button7 meetText4">
  -->
         </div>

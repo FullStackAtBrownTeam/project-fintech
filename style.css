@@ -198,6 +198,7 @@ position: relative; /* Declared position allows for location changes */
 left: 50%;
 -ms-transform: translate(-50%, 0%);
 transform: translate(-50%, 0%);
+top: +10px;
 }
 
 .t-button5 { /* adjust join our listserv button */
@@ -591,6 +592,7 @@ textarea {
 @media screen and (max-width: 600px) {
   .column3 {
     width: 100%;
+
   }
   .homeNavbar a{
     font-size:calc(5px + 1vw);
@@ -605,6 +607,6 @@ textarea {
     font-size:calc(5px + 1vw);
   }
   .box{
-    height: 60vh;
+    height: 50vh;
   }
-  }
+}
