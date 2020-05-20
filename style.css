@@ -124,7 +124,13 @@ width: 28%
   content: "";
   display: table;
   clear: both;
-  }
+}
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding-bottom: 50px;
+}
 
 .column3 {
 float: left;
@@ -390,7 +396,7 @@ margin-bottom: 30px;
   padding-top: 20px;
   padding-bottom: 0px;
   padding-left: 50px;
-  font-size: 20px;
+  font-size: 15px;
 }
 .meetText3 {
   color: black;
@@ -465,29 +471,11 @@ margin-bottom: 30px;
 }
 
 hoverImage {
-  position: relative
-}
-
-hoverImage span1 {
-  overflow: auto;
-  display: none;
-  position: absolute;
-  bottom: 0;
-  width: 95%;
-  padding: 2.5%;
-  background: rgba(24, 23, 23, 0.8);
-  font-family: "Trebuchet MS";
-  font-size:calc(8px + 0.5vw);
-  color: rgb(196, 189, 189);
-  max-height: 500%;
-  bottom: +5px;
-}
-
-hoverImage:hover span1 {
-  display: block
+  position: relative;
 }
 
 hoverImage span {
+  overflow-x: hidden;
   overflow: auto;
   display: none;
   position: absolute;
@@ -496,10 +484,10 @@ hoverImage span {
   padding: 2.5%;
   background: rgba(24, 23, 23, 0.8);
   font-family: "Trebuchet MS";
-  font-size:calc(8px + 0.5vw);
+  font-size: 12px;
   color: rgb(196, 189, 189);
-  max-height: 300%;
-  bottom: +5px;
+  max-height: 500%;
+  bottom: +4px;
 }
 
 hoverImage:hover span {
@@ -514,18 +502,17 @@ hoverImage:hover span {
 .img-blockchain {
   float:  left;
   width:  100%;
-  height: auto;
   background-image: url(blockchain.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 100%;
+  box-sizing: border-box;
 }
 
 .img-quantopian {
   float:  left;
   width:  100%;
-  height: auto;
   background-image: url(quantopian.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -536,14 +523,12 @@ hoverImage:hover span {
 .img-WIBXFINTECH {
   float:  left;
   width:  100%;
-  height: auto;
   background-image: url(WIBXFINTECH.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 100%;
 }
-
 .column2Text {
   float: left;
   width: 30%;
@@ -554,9 +539,10 @@ hoverImage:hover span {
   color: black;
   text-align: justify;
   font-family: "Fjalla One";
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 100%;
+  padding-bottom: 30px;
   font-size: 14px;
+
 }
 
 .bottomEventsText {
@@ -588,11 +574,13 @@ textarea {
   resize: none;
   height: 100px;
 }
-
+.extraNames{
+  line-height: 1.8; 
+   font-size: 1.5vw;
+}
 @media screen and (max-width: 600px) {
   .column3 {
     width: 100%;
-
   }
   .homeNavbar a{
     font-size:calc(5px + 1vw);
@@ -607,6 +595,68 @@ textarea {
     font-size:calc(5px + 1vw);
   }
   .box{
-    height: 50vh;
+    height: calc(50px + 60vh);
   }
+  .meetText1{
+    padding-left: 0px;
+  }
+  .meetText2{
+    padding-left: 0px;
+  }
+  .left1{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 50px;
+  }
+  .right1{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 50px;
+  }
+  .left2{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 50px;
+  }
+  .right2{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 50px;
+  }
+  .middle2{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 50px;
+  }
+    .left4{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+  
+  }
+  .right4{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 50px;
+  }
+  .middle4{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .extraNames{
+    font-size: 15px;  
+  }
+  .row1:after {
+  padding-bottom: 0px;
+}
+ .meetText3{
+   padding-left: 0;
+ }
 }
