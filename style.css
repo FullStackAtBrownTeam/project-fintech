@@ -9,7 +9,7 @@ html,body
 }
 
 .homePageHeader {
-  background-image: url(website-banner.png);
+  background-image: url(website-banner\ -\ Copy.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: calc(50% + 512px);
