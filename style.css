@@ -9,16 +9,23 @@ html,body
 }
 
 .homePageHeader {
-  background-color: grey;
   background-image: url(website-banner.png);
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: calc(50% + 512px);
   position: relative;
   background-attachment: fixed;
-  height: 600px;
+  height: calc(29vw + 300px);
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 1025px) {
+.homePageHeader{
+  background-size: 100%;
+  height: calc(100vw/1.722);
 }
 
+}
 /* Style the top navigation bar */
 
 .homeNavbar {
@@ -89,7 +96,7 @@ html,body
 }
 
 .text1{
-  padding-top: 80px;
+  padding-top: 60px;
   padding-bottom: 20px;
   float:center;
   margin-left: auto;
@@ -409,7 +416,7 @@ margin-bottom: 30px;
 
 .meetText4 {
   color: black;
-  font-family: "Fjalla One";
+  font-family: "Libre One";
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 15px;
@@ -447,11 +454,11 @@ margin-bottom: 30px;
   padding-top: 10px;
 }
 .left3 {
-  width: 10%;
+  width: 8%;
 }
 
 .right3 {
-  width: 90%;
+  width: 92%;
   float: right;
 }
 .left4 {
@@ -539,7 +546,7 @@ hoverImage:hover span {
 .eventsText {
   color: black;
   text-align: justify;
-  font-family: "Fjalla One";
+  font-family: "Libre One";
   padding-top: 100%;
   padding-bottom: 30px;
   font-size: 14px;
@@ -548,7 +555,7 @@ hoverImage:hover span {
 
 .bottomEventsText {
   color: #B0C4DE;
-  font-family: "Fjalla One";
+  font-family: "Libre One";
   padding-top: 30px;
   padding-left: 8%;
   padding-right: 8%;
@@ -564,6 +571,7 @@ hoverImage:hover span {
   height: 350px;
   margin-bottom: 50px;
   padding-bottom: 30px;
+  font-family: "Libre One";
 }
 
 input {
