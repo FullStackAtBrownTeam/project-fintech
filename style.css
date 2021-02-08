@@ -1,37 +1,222 @@
+@font-face {
+    font-family: 'FintechSerif';
+    src: url('Fonts/DeepMindSerifDisplay-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FintechSans';
+    src: url('Fonts/DMSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 
 html,body
 {
-    width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    color: rgb(0,0,0,0.8);
+}
+
+body {
+  font-family: 'FintechSans';
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 400;
+  font-family: 'FintechSans';
+  color: white;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 26px;
+  font-family: 'FintechSerif';
+  margin-bottom: 50px;
+}
+
+h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: 400;
+  color: rgb(0,0,0,0.7);
+  font-family: 'FintechSerif';
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'FintechSans';
+  /* color: #768bdb; */
+}
+
+form {
+  width: 70%;
+}
+
+label {
+  font-size: 12px;
+}
+
+input[type=text] {
+  height: 50px;
+  border: none;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+input[type=email] {
+  height: 50px;
+  margin-top: 10px;
+  border: none;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 6px;
+}
+
+textarea {
+  height: 50px;
+  margin-top: 10px;
+  border: none;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 6px;
+}
+
+select {
+  margin-top: 10px;
+  height: 50px;
+  border: none;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 6px;
+}
+
+input {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  padding: 10px;
+  font-family: "FintechSans";
+}
+
+textarea {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  padding: 10px;
+  font-family: "FintechSans";
+}
+
+select {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  padding: 10px;
+  padding-right: 40px;
+  font-family: "FintechSans";
+}
+
+.introcard {
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ebf1fd;
+  margin-bottom: 60px;
+  padding-top: 20px;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15);
+
+}
+
+.grid {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: grid;
+  grid-gap: 60px;
+  margin-bottom: 100px;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.eventbottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 14px;
+}
+
+.row {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.members {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 40px;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-bottom: 60px;
+}
+
+.arrow {
+  margin-bottom: 2px;
+  transition: 0.1s;
+  opacity: 0.7;
+}
+.arrow:hover {
+  opacity: 0.4;
+}
+
+.date {
+  letter-spacing: 0.05em;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+  z-index: 5;
 }
 
 .homePageHeader {
-  background-image: url(website-banner\ -\ Copy.png);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: calc(50% + 512px);
+  background-image: url("source.gif");
+  background-position: bottom;
+  background-size: 100% auto;
   position: relative;
   background-attachment: fixed;
-  height: calc(29vw + 300px);
+  height: 72vh;
   margin: 0;
   padding: 0;
-}
-@media screen and (min-width: 1025px) {
-.homePageHeader{
-  background-size: 100%;
-  height: calc(100vw/1.722);
-}
-
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* Style the top navigation bar */
 
 .homeNavbar {
   padding: 0; /* Add some padding */
   overflow: hidden; /* Hide overflow */
-  
 }
 
 /* Style the navigation bar links */
@@ -42,7 +227,6 @@ html,body
   text-align: center; /* Center the text */
   padding: 14px 20px; /* Add some padding */
   text-decoration: none; /* Remove underline */
-  font-family: "Libre Franklin"
 }
 
 .homeNavbar .dropdown {
@@ -51,15 +235,14 @@ html,body
 }
 
 
-.homeNavbar .dropdown .dropbtn {  
+.homeNavbar .dropdown .dropbtn {
   background-color: transparent;
-  display: block; /* Change the display to block, for responsive reasons (see below) */
   color: white; /* White text color */
   padding: 14px 20px; /* Add some padding */
   border: none;
   outline: none;
   font-size: 100%;
-  font-family: "Libre Franklin"
+  cursor: pointer;
 }
 .homeNavbar .dropbtn {
   background-color: #ddd;
@@ -95,16 +278,84 @@ html,body
   display: block;
 }
 
+
+
+/* standard bar */
+
+.navbar {
+  padding: 0; /* Add some padding */
+  overflow: hidden; /* Hide overflow */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: right;
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+
+.navbar .dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.navbar .dropdown .dropbtn {
+  background-color: transparent;
+  color: white; /* White text color */
+  padding: 14px 20px; /* Add some padding */
+  border: none;
+  outline: none;
+  font-size: 100%;
+  cursor: pointer;
+}
+.navbar .dropbtn {
+  background-color: #ddd;
+}
+.navbar .dropbtn:hover {
+    background-color: rgb(0, 0, 0, 0.3);
+}
+.navbar  a:hover{
+  background-color: rgb(0, 0, 0, 0.3);
+}
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.navbar .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.navbar .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
 .text1{
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 20px;
   float:center;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Libre Franklin";
   text-align: center;
-  font-size: 20px;
-  width: 28%
+  font-size: 24px;
+  width: 60%;
+  font-family: FintechSerif;
 }
 
 .header1 {
@@ -112,41 +363,41 @@ html,body
   padding-top: 30px;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Libre Franklin";
   text-align: Left;
   font-size: 20px;
   width: 80%
 }
 
 .text2{
-padding: 100px;
-margin-left: auto;
-margin-right: auto;
-font-family: "Libre Franklin";
-text-align: Left;
-font-size: 20px;
-width: 28%
+  padding: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: Left;
+  font-size: 20px;
+  width: 28%;
 }
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-.row1:after {
-  content: "";
-  display: table;
-  clear: both;
-  padding-bottom: 50px;
+
+.profile {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 0px 2px 6px rgb(0,0,0,0.15);
 }
 
 .column3 {
-float: left;
-width: 33.33%;
+  background-color: #F1F5F5;
+  transition: 0.2s;
+  box-shadow: 0px 2px 6px rgb(0,0,0,0.15);
 }
 
-
-
-
+.column3:hover {
+  opacity: 0.9;
+}
 
 .center {
 display: block;
@@ -245,7 +496,7 @@ top: +80px;
 }
 
 .button1 { /*first button */
-background-color: white; 
+background-color: white;
 border: 2px solid  black;
 color: black;
 padding: 14px 40px;
@@ -262,7 +513,7 @@ color: white;
 }
 
 .button2 { /*first button */
-background-color: rgb(57, 173, 222); 
+background-color: rgb(57, 173, 222);
 border: black;
 color: white;
 padding: 14px 40px;
@@ -278,21 +529,22 @@ background-color: rgb(96, 217, 250); /* Green */
 color: white;
 }
 
-.button21 { 
-  background-color: rgb(57, 173, 222); 
+.button21 {
+  background-color: rgb(57, 173, 222);
   border: black;
   color: white;
-  padding: 10px 18px;
+  padding: 15px 18px;
+  border-radius: 6px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 12px;
   transition-duration: 0.4s;
 }
-  
+
 
 .button3 {
-background-color: rgb(0, 0, 0); 
+background-color: rgb(0, 0, 0);
 border: 2px solid white;
 color: white;
 
@@ -311,115 +563,35 @@ color: black;
 
 .box{
 width: 100%;
-height: 250px;
+height: 200px;
 background: black;
 }
 
 .btn-space {
 margin-right: 80px;
-margin-bottom: 30px;
+margin-bottom: 100px;
 }
 
-
-
-.navbar {
-  padding-left: 0; /* Add some padding */
-  overflow: hidden; /* Hide overflow */
-}
-
-/* Style the navigation bar links */
-.navbar a {
-  float: right;
-  display: block; /* Change the display to block, for responsive reasons (see below) */
-  color: black; /* White text color */
-  text-align: center; /* Center the text */
-  padding: 14px 20px; /* Add some padding */
-  text-decoration: none; /* Remove underline */
-  font-family: "Libre Franklin"
-}
-
-.navbar .dropdown {
-  float: right;
-  overflow: hidden;
-}
-
-
-.navbar .dropdown .dropbtn {  
-  background-color: transparent;
-  display: block; /* Change the display to block, for responsive reasons (see below) */
-  color: black; 
-  padding: 14px 20px; /* Add some padding */
-  border: none;
-  outline: none;
-  font-size: 16px;
-  font-family: "Libre Franklin";
-
-}
-.navbar .dropbtn {
-  background-color: black;
-}
-.navbar .dropbtn:hover {
-  background-color: gray;
-}
-.navbar  a:hover{
-  background-color: gray;
-}
-.navbar .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: black;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.navbar .dropdown-content a {
-  float: none;
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.navbar .dropdown-content a:hover {
-  background-color:black;
-}
-
-.navbar .dropdown:hover .dropdown-content {
-  display: block;
-}
 
 .meetText1 {
+  font-family: 'FintechSerif';
   color: black;
-  font-family: "Fjalla One";
   padding-top: 20px;
-  padding-left: 50px;
   padding-bottom: 20px;
+  color: rgb(0,0,0,0.8);
   font-size: 30px;
 }
 .meetText2 {
-  color: black;
-  font-family: "Fjalla One";
   padding-top: 20px;
   padding-bottom: 0px;
-  padding-left: 50px;
   font-size: 15px;
 }
 .meetText3 {
   color: black;
-  font-family: "Fjalla One";
   padding-top: 20px;
   padding-left: 50px;
   padding-bottom: 20px;
   font-size: 45px;
-}
-
-.meetText4 {
-  color: black;
-  font-family: "Libre One";
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 15px;
 }
 
 .column {
@@ -454,17 +626,13 @@ margin-bottom: 30px;
   padding-top: 10px;
 }
 .left3 {
-  width: 8%;
+  width: 50px;
 }
 
 .right3 {
-  width: 92%;
-  float: right;
+  float: center;
 }
 .left4 {
-  padding-left: 5%;
-  width: 26.66666%;
-  padding-top: 10px;
 }
 .middle4 {
   width: 26.66666%;
@@ -475,6 +643,13 @@ margin-bottom: 30px;
   width:26.66666%;
   padding-left: 5%;
   padding-top: 10px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebf1fd;
 }
 
 
@@ -491,11 +666,10 @@ hoverImage span {
   width: 95%;
   padding: 2.5%;
   background: rgba(24, 23, 23, 0.8);
-  font-family: "Trebuchet MS";
   font-size: 12px;
   color: rgb(196, 189, 189);
   max-height: 500%;
-  bottom: +4px;
+  bottom: +3px;
 }
 
 hoverImage:hover span {
@@ -507,15 +681,10 @@ hoverImage:hover span {
   padding: 1.5px;
 }
 
-.img-blockchain {
-  float:  left;
+.img-event {
   width:  100%;
-  background-image: url(blockchain.jpg);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 100%;
-  box-sizing: border-box;
+  object-fit: cover;
+  height: 300px;
 }
 
 .img-quantopian {
@@ -544,23 +713,27 @@ hoverImage:hover span {
 }
 
 .eventsText {
-  color: black;
-  text-align: justify;
-  font-family: "Libre One";
-  padding-top: 100%;
-  padding-bottom: 30px;
+  color: rgb(0,0,0,0.6);
+  padding: 30px;
+  hyphens: auto;
   font-size: 14px;
-
 }
 
 .bottomEventsText {
-  color: #B0C4DE;
-  font-family: "Libre One";
+  color: rgb(0,0,0,0.5);
+  background-color: #ebf1fd;
   padding-top: 30px;
   padding-left: 8%;
   padding-right: 8%;
   padding-bottom: 30px;
-  font-size: 20px;
+  font-size: 16px;
+  margin-bottom: 60px;
+  box-shadow: 0px 2px 6px rgb(0,0,0,0.15);
+}
+
+.nametag {
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .container {
@@ -571,7 +744,6 @@ hoverImage:hover span {
   height: 350px;
   margin-bottom: 50px;
   padding-bottom: 30px;
-  font-family: "Libre One";
 }
 
 input {
@@ -584,12 +756,25 @@ textarea {
   height: 100px;
 }
 .extraNames{
-  line-height: 1.8; 
+  line-height: 1.8;
    font-size: 1.5vw;
 }
+
+@media screen and (max-width: 900px) {
+  .members {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
 @media screen and (max-width: 600px) {
-  .column3 {
-    width: 100%;
+  h1 {
+    font-size: 30px;
+  }
+  .members {
+    grid-template-columns: repeat(1,1fr);
+  }
+  .grid {
+    grid-template-columns: repeat(1,1fr);
   }
   .homeNavbar a{
     font-size:calc(5px + 1vw);
@@ -604,7 +789,7 @@ textarea {
     font-size:calc(5px + 1vw);
   }
   .box{
-    height: calc(50px + 60vh);
+    height: calc(0px + 60vh);
   }
   .meetText1{
     padding-left: 0px;
@@ -642,11 +827,8 @@ textarea {
     padding-right: 5%;
     padding-bottom: 50px;
   }
-    .left4{
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-  
+  .left3 {
+    width: 30px;
   }
   .right4{
     width: 90%;
@@ -661,12 +843,18 @@ textarea {
     padding-right: 5%;
   }
   .extraNames{
-    font-size: 15px;  
+    font-size: 15px;
   }
   .row1:after {
   padding-bottom: 0px;
 }
  .meetText3{
    padding-left: 0;
+ }
+ .homeNavbar a {
+   padding: 14px 10px;
+ }
+ .homeNavbar .dropdown .dropbtn {
+   padding: 14px 10px;
  }
 }

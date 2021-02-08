@@ -16,78 +16,106 @@ body {
 </style>
 </head>
 <body>
-  <div class = "row1">
-      <div class="column left3">
-          <a href="index.html">
-          <img src="logo-transparent.png" width="100%;"  alt="FinTech">
-          </a>
-       </div>
-       <div class="column right3">
-        <div class="navbar" style="white-space:nowrap">
-            <a href="ContactUs.html">CONTACT</a>
-            <a href="https://www.medium.com/fintech-brown">BLOG</a>
-              <div class="navbar dropdown">
-                 <button class="navbar dropbtn">
-                    EVENTS
-                 </button>
-              <div class="navbar dropdown-content">
-                <a href="Events.html">EVENTS</a>
-              </div>
-             </div>
-            <div class="navbar dropdown">
-              <button class="navbar dropbtn">
-                  ABOUT
+<div class = "row1">
+    <div class="column left3">
+        <a href="index.html">
+        <img src="logo-transparent.png" width="100%;"  alt="FinTech">
+        </a>
+     </div>
+     <div id="navbar" class="navbar" style="white-space:nowrap">
+         <a style="color: black" href="contact.html">Contact</a>
+         <a style="color: black" href="https://www.medium.com/fintech-brown">Blog</a>
+           <div class="navbar dropdown">
+              <button style="color: black" class="navbar dropbtn colorToggle">
+                 Events
               </button>
-              <div class="navbar dropdown-content">
-                <a href="AboutUs.html">ABOUT US</a>
-                <a href="MeetTheTeam.html">MEET THE TEAM</a>
-              </div>
-             </div>
+           <div class="navbar dropdown-content">
+             <a href="Events.html">Events</a>
+           </div>
           </div>
-      </div>
+         <div class="navbar dropdown">
+           <button style="color: black" class="navbar dropbtn colorToggle">
+               About
+           </button>
+           <div class="navbar dropdown-content">
+             <a href="about.html">About Us</a>
+             <a href="team.html">Meet the Team</a>
+           </div>
+          </div>
+       </div>
+</div>
+<div class="introcard">
+  <h1 style="font-size: 35px; color: rgb(0,0,0,0.75); margin-bottom: 20px;">
+    Past Events
+  </h1>
+  <div style="border-bottom: 1px solid rgb(0,0,0,0.75); width: 80px; margin-bottom: 10px;">
   </div>
-<div class="meetText1" style="text-align: center; padding-left:0;">
-    Events
+</div>
+<div class="grid" style="margin-bottom: 60px;">
+  <div class="column3 left4">
+    <img class="img-event" src="quantopian.jpg"></img>
+    <div class = eventsText>
+      <h3>  Demystifying Algorithm Trading: Introduction to Quantopian </h3>
+     Quantopian is a crowd-sourced quantitative investment firm that inspires people
+     from around the world to write investment algorithms by providing capital,
+     education, data a research environment and a development platform. In this
+     workshop, we covered the basics of the Quantopian and learn how to write a
+     functional trading algorithm.
+      <div class="eventbottom">
+        <div class="date">
+          24 May 2021
+        </div>
+        <a href="your facebook event here">
+          <img src="arrow.svg" height="25px" width="auto" class="arrow">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="column3 left4">
+    <img class="img-event" src="WIBXFINTECH.jpg"></img>
+    <div class = eventsText>
+      <h3>  WIBXFINTECH@BROWN: Fintech 101 </h3>
+      Have you ever wondered about FinTech and what it encompasses? WIB & FinTech@Brown
+      are collaborating to bring you an introduction to FinTech on March 20th at 6PM
+      in Friedman 202! Some topics include fields of FinTech, trends in the industry,
+      and women in FinTech. Additionally, this event is part 1 of a series of workshops,
+      with part 2 coming up and including panelists!
+      <div class="eventbottom">
+        <div class="date">
+          24 May 2021
+        </div>
+        <a href="your facebook event here">
+          <img src="arrow.svg" height="25px" width="auto" class="arrow">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="column3 left4">
+    <img class="img-event" src="blockchain.jpg"></img>
+    <div class = eventsText>
+      <h3>  Blockchain Workshop </h3>
+      Quorum® is a smart contract platform built on Ethereum and developed by J.P. Morgan.
+      In this workshop, we learned how to write a smart contract in Solidity and how to
+      run an actual decentralized marketplace on a personal computer.
+      <div class="eventbottom">
+        <div class="date">
+          24 May 2021
+        </div>
+        <a href="your facebook event here">
+          <img src="arrow.svg" height="25px" width="auto" class="arrow">
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="row">
-    <div class="column3 left4">
-      <div class="img-blockchain"> </div>
-        <div class = eventsText>
-          <h3>  BLOCKCHAIN WORKSHOP </h3>
-          Quorum® is a smart contract platform built on Ethereum and developed by J.P. Morgan.
-          In this workshop, we learned how to write a smart contract in Solidity and how to
-          run an actual decentralized marketplace on a personal computer.
-        </div>
- </div>
-    <div class="column middle4">
-      <div class="img-quantopian"></div>
-        <div class = eventsText>
-          <h3>  DEMYSTIFYING ALGORITHM TRADING: INTRODUCTION TO QUANTOPIAN </h3>
-          Quantopian is a crowd-sourced quantitative investment firm that inspires people
-          from around the world to write investment algorithms by providing capital,
-          education, data a research environment and a development platform. In this
-          workshop, we covered the basics of the Quantopian and learn how to write a
-          functional trading algorithm.
-        </div>
-    </div>
-    <div class ="column right4">
-      <div class="img-WIBXFINTECH"></div>
-        <div class = eventsText>
-          <h3> WIBXFINTECH@BROWN: FINTECH 101 </h3>
-          Have you ever wondered about FinTech and what it encompasses? WIB & FinTech@Brown
-          are collaborating to bring you an introduction to FinTech on March 20th at 6PM
-          in Friedman 202! Some topics include fields of FinTech, trends in the industry,
-          and women in FinTech. Additionally, this event is part 1 of a series of workshops,
-          with part 2 coming up and including panelists!
-        </div>
-    </div>
-</div>
-
-<div class="bottomEventsText" style="text-align: center">
-    Do you or your company want to get involved with any of our events?
-    Email <a href = "mailto:FINTECH@BROWN.EDU">FINTECH@BROWN.EDU </a> and we will follow up
-    with our event partnership information!
+<div style="padding-left: 10%; padding-right: 10%">
+  <div class="bottomEventsText" style="text-align: center">
+      Do you or your company want to get involved with any of our events? <br>
+      Email <a style="text-decoration: none; color: #6f9df7"
+      href = "mailto:fintech@brown.edu">fintech@brown.edu </a> and we will follow up
+      with our event partnership information!
+  </div>
 </div>
 
 
